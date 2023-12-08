@@ -1,1 +1,17 @@
-# react from start
+# Parcel
+ - Dev build
+ - local server
+ - HMR(hot module replacement)
+ - File Watching Algorithm - written in c++
+ - Caching - Faster Builds
+ - Image optimisation
+ - Minification
+ - Bundling
+ - Compress
+ - Consistent Hahing
+ - Code Splitting
+ - Diffrential Bundling - support older browsers
+ - Diagnostic
+ - Error Handling
+ - Tree Shaking - remove unused code
+ - Different dev and prod bundles

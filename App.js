@@ -1,15 +1,7 @@
-{/* <div id = "parent">
-    <div id = "child1">
-        <h1>"Hello World from the React"</h1>
-        <h2>""children</h2>
-    </div>
-    <div id = "child2">
-        <h1>"Hello World from the React"</h1>
-        <h2>""children</h2>
-    </div>
-</div> */}
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const hea = React.createElement("div", {id:"parent"}, [
+const heading = React.createElement("div", {id:"parent"}, [
     React.createElement("div", {id:"child1"}, [
         React.createElement("h1", {}, "Hello World from the React"),
         React.createElement("h3", {}, "Hello World from the React small")
@@ -20,8 +12,8 @@ const hea = React.createElement("div", {id:"parent"}, [
     ])
 ])
 
-const ro = ReactDOM.createRoot(document.getElementById("root"));
-ro.render(hea);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
 
 
 
