@@ -1,56 +1,47 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("div", {id:"parent"}, [
-    React.createElement("div", {id:"child1"}, [
-        React.createElement("h1", {}, "Hello World from the React"),
-        React.createElement("h3", {}, "Hello World from the React small")
-    ]), 
-    React.createElement("div", {id:"child2"}, [
-        React.createElement("h1", {}, "Hello World from the React"),
-        React.createElement("h3", {}, "Hello World from the React small")
-    ])
-])
+const elem  = <span>React Element span tag Used</span>
+
+const title = (
+      <h1 className = "head" tabIndex = "5">
+          {elem}
+          Hello from jsx in react
+     </h1>
+);
+
+const Title1 = () => (
+     <h1 className = "head" tabIndex = "5">
+         Hello from jsx in react
+    </h1>
+);
+
+const Title2 = () => (
+     <h1 className = "head" tabIndex = "5">
+         Hello from jsx in react
+    </h1>
+);
+
+const HeadingComponent1 = () => (
+     <div id = "container">
+          {title}
+          {Title1()}
+          <Title1></Title1>
+          <Title1/>
+          <Title2/>
+          {345+456}
+          <h1 className="heading"> Functional Component example in react</h1>
+     </div>   
+)
+
+const title5 = (
+     <h1 className = "head" tabIndex = "5">
+         {elem}
+         Hello from jsx in react
+         <HeadingComponent1/>
+    </h1>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const hea = React.createElement(
-//     "div",
-//     {id:"parent"},
-//     React.createElement(
-//         "div",
-//         {id:"child"},
-//         [
-//             React.createElement("h1",{},"Hello World from the Nested React "),
-//             React.createElement("h3",{},"Hello World from the Nested React "),
-//             React.createElement("h5",{},"Hello World from the Nested React ")
-//         ]
-//     )
-// )
-
-// // const hea = React.createElement(
-// //     "h1",
-// //     {id:"heading"},
-// //     "Hello World from the React"
-// // )
-
-// const ro = ReactDOM.createRoot(document.getElementById("root"));
-
-// ro.render(hea);
+root.render(title5)
+root.render(<HeadingComponent1/>);

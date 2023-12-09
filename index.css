@@ -1,7 +1,11 @@
-#heading{
+#jsxHeading{
     color: brown;
 }
 
 #parent{
     color:blue;
+}
+
+.head{
+    color: burlywood;
 }
