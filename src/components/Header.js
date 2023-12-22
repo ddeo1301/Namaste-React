@@ -1,30 +1,34 @@
+import {useState} from "react"
 import {LOGO_URL} from "../utils/constants";
+import {Link} from "react-router-dom";
+
+const Title = () => {
+    <a href="/">
+       <img className = "logo" alt = "logo" src = {LOGO_URL}/>
+    </a> 
+}
 
 const Header = () => {
     const[btnNameReact, setBtnNameReact] = useState("Login");
 
     return(
      <div className="header">
-         <div className="logo-container">
-         <img
-             className = "logo"
-             alt = "logo"
-             src = {LOGO_URL}
-         />
-         </div>
+         <Title />
+
          <div className="nav-items">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><Link to = "/">Home</Link></li>
+              <li><Link to = "/about">About</Link></li>
+              <li><Link to = "/contact">Contact</Link></li>
               <li>Cart</li>
+
               <button className="login" 
-              onclick = {() => {
-                btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login")
-              }
+                onClick = {() => {
+                   btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login")
+                }
               }>{btnNameReact}</button>
            </ul>
-       </div>
+         </div>
      </div>
     );
  };

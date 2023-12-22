@@ -10,6 +10,7 @@
 }
 
 .nav-items{
+    list-style-type: none;
     padding: 0px 20px;
 }
 
@@ -25,9 +26,11 @@
 }
 
 .res-card{
+    overflow: hidden;
     padding: 5px;
     margin: 5px;
-    width: 200px;
+    width: 250px;
+    
 }
 
 .res-card:hover{
@@ -49,7 +52,9 @@
 }
 
 .res-logo{
-    width:100%
+    width:100%;
+    display: wrap;
+    flex-wrap: wrap;
 }
 
 .res-container{
@@ -80,5 +85,10 @@
 }
 
 .filter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
     display: flex;
 }
