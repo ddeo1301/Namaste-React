@@ -45,3 +45,29 @@
 # React Hooks
   (Normal JS utility function) 
     - useState() - super powerful state varible
+
+# .............................
+ * Parent Constructor
+ * Parent render
+ *   - First Child constructor
+ *    -First Child render
+ *    -Second Child constructor
+ *    -Second Child render
+ *
+ *    -DOM UPDATED for children
+ *
+ *    -first Child componentDidMount
+ *    -Second Child componentDid
+ *  Parent componentDidMount
+
+ # ........................
+ *  child constructor
+ *  child render
+ *  child componentDidMount
+ *
+ *  API call
+ *  Set State
+ *
+ *  <UPDATE CYCLES>
+ *  render
+ 
